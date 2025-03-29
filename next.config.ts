@@ -1,10 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  distDir: 'out',           // Output folder for export
+  output: 'export',
+  distDir: 'out',
   images: {
-    unoptimized: true,      // Required if you're using <Image />
+    unoptimized: true,
   },
-  basePath: '/seteng',  // 👈 Replace with your actual GitHub repo name
+  basePath: '/seteng', // Ensure this matches your repository name
 };
 
 module.exports = nextConfig;
